@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Ensure labels always display */
+label {
+  display: block; /* Display labels on separate lines */
+  margin-bottom: 5px; /* Add some spacing between labels and input fields */
+}
+
+/* Style placeholders for input and textarea fields */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  font-style: italic; /* Italicize the placeholders */
+  color: #999; /* Set a gray color for placeholders */
+}
+
+/* Style input and textarea fields for better readability */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Make fields expand to the full width of their container */
+}
+.contant{
+        border: 2px solid #bcbcbc;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 13px;
+}
+ input, input:focus-visible
+{
+    border: none !important;
+}
+
+/* Additional styling for the submit button */
+input[type="submit"] {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+</style>
+<body>
+    <form>
+        <div class="contant"><label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"></div>
+        
+        <div class="contant"> <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"></div>
+        
+        <div class="contant"> <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea></div>
+        
+        <input type="submit" value="Submit">
+      </form>
+        
+</body>
+
+   <script>
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+      location = 'https://galbraith-wilson.fmtemp.com/thanku/';
+    }, false );
+    </script>
+    <div class="contact-box row"><div class="col-mg-12 col-lg-6"><label> FULL NAME[text* text-52 placeholder "Jane Doe"]</div><div class="col-mg-12 col-lg-6"><label> EMAIL [email* email-941 placeholder "j-doe@gmail.com"]</label></div><div class="col-mg-12 col-lg-6"><label> PHONE [tel* tel-997 placeholder "10012161600"]</label></div><div class="col-mg-12 col-lg-6"><label> PREFERRED CONTACT METHOD [select* menu-456 "EMAIL" "PHONE"]</label></div><div class="col-mg-12 col-lg-6"><label>appointment date [date date-123 max:next_Friday+7days "next Friday"]</label></div><div class="col-mg-12 col-lg-6"><label> appointment HOUR [select* menu-75 class:TimePicker "9:30" "10:00" "10:30" "11:00" "11:30" "12:00" "12:30" "1:00" "1:30" "2:00" "2:30" "3:00"]</label></div> <label>Subject [text* text-17 class:Subject placeholder "Please select a subject for your legal issue."]</label><label> YOUR MESSAGE [textarea* textarea-320 placeholder "Tell us more..."]</label>[submit "MAKEANAPPOINTMENT"]</div>
+    
+</html>
+
+<script>
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+      location = 'https://galbraith-wilson.fmtemp.com/thanku/';
+    }, false );
+    </script>
+    <div class="contact-box row"><div class="col-mg-12 col-lg-6"> <div class="contant-item"><label> FULL NAME[text* text-52 placeholder "Jane Doe"]</label></div></div><div class="col-mg-12 col-lg-6"><div class="contant-item"><label> EMAIL [email* email-941 placeholder "j-doe@gmail.com"]</label></div></div><div class="col-mg-12 col-lg-6"><div class="contant-item"><label> PHONE [tel* tel-997 placeholder "10012161600"]</label></div></div><div class="col-mg-12 col-lg-6"><div class="contant-item"><label> PREFERRED CONTACT METHOD [select* menu-456 "EMAIL" "PHONE"]</label></div></div><div class="col-mg-12 col-lg-6"><div class="contant-item"><label>appointment date [date date-123 max:next_Friday+7days "next Friday"]</label></div></div><div class="col-mg-12 col-lg-6"><div class="contant-item"><label> appointment HOUR [select* menu-75 class:TimePicker "9:30" "10:00" "10:30" "11:00" "11:30" "12:00" "12:30" "1:00" "1:30" "2:00" "2:30" "3:00"]</label></div></div> <div class="contant-item"><label>Subject [text* text-17 class:Subject placeholder "Please select a subject for your legal issue."]</label></div><div class="contant-item"><label> YOUR MESSAGE [textarea* textarea-320 placeholder "Tell us more..."]</label></div>[submit "MAKEANAPPOINTMENT"]</div>
+
+    .contact-box p {
+        padding: 10px!important;
+    }
