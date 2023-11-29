@@ -1,0 +1,33 @@
+import React from "react";
+import "./App.css";
+import Conditional1 from "./Form/Conditional1";
+import Conditional2 from "./Form/Conditional2";
+
+function App() {
+  // **************** if else //
+  var name = "Pranshu";
+  //  if (name == "150")
+  //  {
+  //   return <Conditional1 />
+  //  }else {
+  //   return <Conditional2 />
+  //  }
+  var age = 20;
+  return(
+    <>
+    {/* {
+         // ********and && oprater***********
+        name == "ranshu" && <h4> hello this is true </h4>
+    } */}
+    {/* output if conditation is true print "helllo this is true" else " " kuch nhi print hoga */}
+
+    {
+         // ********and Ternary operator***********
+        age >= 21 ? <h2> You can vote </h2> : <h2> You are not eligible for vote </h2>
+    }
+    {/* output if conditation is true print "You can vote" else "You are not eligible for vote" */}
+    </>
+  )
+}
+
+export default App;
